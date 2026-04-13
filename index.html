@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!--
+Project Title: Interactive Quiz
+Name: Pushp
+Date: 13 April 2026
+-->
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Quiz</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="quiz-container">
+  <h1>Interactive Quiz</h1>
+  <p class="intro">Test your knowledge with this simple quiz!</p>
+
+  <div id="quiz">
+    <h2 id="question">Question text</h2>
+
+    <div class="options">
+      <label><input type="radio" name="answer" value="0"> <span id="opt0"></span></label>
+      <label><input type="radio" name="answer" value="1"> <span id="opt1"></span></label>
+      <label><input type="radio" name="answer" value="2"> <span id="opt2"></span></label>
+      <label><input type="radio" name="answer" value="3"> <span id="opt3"></span></label>
+    </div>
+
+    <button id="nextBtn">Next</button>
+  </div>
+
+  <div id="result" class="hidden">
+    <h2 id="score"></h2>
+    <p id="message"></p>
+    <button onclick="restartQuiz()">Restart Quiz</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
